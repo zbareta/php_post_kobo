@@ -2,7 +2,7 @@
 if (function_exists('curl_file_create')) {
 	$cFile = curl_file_create(realpath("test.xml"));
 } else {
-	$cFile = '@' . realpath("FILENAME.xml");
+	$cFile = '@' . realpath("test.xml");
 }
 $post = array('xml_submission_file'=> $cFile);
 $ch = curl_init();
