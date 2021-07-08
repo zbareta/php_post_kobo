@@ -8,7 +8,7 @@ $post = array('xml_submission_file'=> $cFile);
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,"https://kobocat.unhcr.org/submission");
 curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_USERPWD, "USERNAME:PASSWORD");
+curl_setopt($ch, CURLOPT_USERPWD, "ENTER_USERNAME>:ENTER_PASSWORD");
 curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $result=curl_exec($ch);
